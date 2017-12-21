@@ -26,7 +26,7 @@ module RR
       def applies?
         defined?(::RSpec) &&
         defined?(::RSpec::Core::Version::STRING) &&
-        ::RSpec::Core::Version::STRING =~ /^2/
+        ::RSpec::Core::Version::STRING =~ /^(2|3)/
       end
 
       def hook
